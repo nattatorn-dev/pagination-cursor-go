@@ -1,0 +1,26 @@
+# .air.toml
+
+[build]
+# Set working_directory to the subdirectory of your project if needed
+working_directory = "."
+output_dir = "tmp"
+bin = "tmp/main" # The binary file name
+full_bin = "./tmp/main" # The binary file with path
+
+# This block represents files with specific extensions to be watched for changes.
+[build.include_ext]
+files = ["go", "toml"]
+
+# Set to watch these directories
+[build.include_dir]
+dirs = ["./"]
+
+# This block represents files to be excluded from watching.
+[build.exclude_dir]
+dirs = ["tmp", "vendor"]
+
+[log]
+level = "info"
+
+[server]
+address = "localhost:8080" # Adjust if needed

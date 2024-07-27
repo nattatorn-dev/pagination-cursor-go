@@ -1,0 +1,12 @@
+GET http://localhost:8080/users?limit=10
+
+### Sorting
+GET http://localhost:8080/users?limit=10&sort=salary,id
+
+
+### Cursor Id
+GET http://localhost:8080/users?cursor=aWQ9MTA=
+
+
+### Cursor Salary, Id
+GET http://localhost:8080/users?cursor=c2FsYXJ5PTgwMDAwfGlkPTEy
